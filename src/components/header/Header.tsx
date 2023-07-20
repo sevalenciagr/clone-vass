@@ -26,7 +26,7 @@ const Header = () => {
               Casos de éxito
             </Nav.Link>
             <NavDropdown
-              title={<span style={{ color: "white" }}>Mercados</span>}
+              title={<span style={{ color: "white" }}>Mercados</span>} 
               id="navbarScrollingDropdown"
               className="d-flex custom-dropdown"
               style={{ backgroundColor: "black" }}
