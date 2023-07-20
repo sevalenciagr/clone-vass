@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-container">
       <Container>
         <Row md={2}>
           <Col>
