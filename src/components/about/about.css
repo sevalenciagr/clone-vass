@@ -1,0 +1,13 @@
+/* about.css */
+
+/* Clase para el componente About */
+.about-container {
+  background-color: #333; 
+  color: white; 
+  padding: 30px;
+}
+
+/* Estilos para los elementos hijos del contenedor */
+.about-container h6 {
+  color: white; 
+}

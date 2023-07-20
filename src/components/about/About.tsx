@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const About = () => {
   return (
-    <div>
-      <div></div>
+    <div className="about-container">
       <div>
         <Container>
           <Row md={4}>
