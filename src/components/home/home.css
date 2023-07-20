@@ -1,3 +1,23 @@
+/* home.css */
+
+.custom-height {
+  height: 120%;
+}
+
 .full-width-image {
   width: 100%;
+}
+
+
+.container-wrapper {
+  margin-top: 80px; 
+  margin-bottom: 80px;
+}
+
+.col-divider {
+  padding: 10px; /* Agrega espaciado alrededor de los elementos */
+}
+
+.border-right {
+  border-right: 1px solid #000; /* Línea divisoria entre las columnas de color negro */
 }
