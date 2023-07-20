@@ -1,5 +1,7 @@
-import './home.css';
-import Badge from 'react-bootstrap/Badge';
+import "./home.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Home = () => {
   return (
@@ -10,9 +12,20 @@ const Home = () => {
         className="full-width-image"
       />
       <div>
-      <h1 className="text-start">
-        Example heading <Badge bg="secondary">New</Badge>
-      </h1>
+        <Container>
+          <Row md={3}>
+            <Col className="text-start">
+              <h2 className="text-start">EMPECEMOS A HACERLO SENCILLO</h2>
+            </Col>
+
+            <Col className="text-start">
+              <h5 className="text-start">
+                Nos emociona impulsar tu transformación digital
+              </h5>
+            </Col>
+          </Row>
+        </Container>
+        
       </div>
     </div>
   );
