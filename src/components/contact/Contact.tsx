@@ -1,50 +1,53 @@
 import "./contact.css";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import Container from "react-bootstrap/Container";
-import Button from 'react-bootstrap/Button';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <Container>
-        <Row md={2}>
-          <Col>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">Nombre y apellidos</InputGroup.Text>
-              <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-            </InputGroup>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">Email</InputGroup.Text>
-              <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-            </InputGroup>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">Empresa/Organismo</InputGroup.Text>
-              <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-            </InputGroup>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">País</InputGroup.Text>
-              <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-            </InputGroup>
-          </Col>
-          <Col>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">Teléfono</InputGroup.Text>
-              <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-            </InputGroup>
-            <InputGroup>
-              <InputGroup.Text>
-                Mensaje:
-              </InputGroup.Text>
-              <Form.Control as="textarea" aria-label="With textarea" />
-            </InputGroup>
-          </Col>
-        </Row>
-        <Button variant="primary">Enviar</Button>{' '}
-      </Container>
-
+    <div className="contact-container bg-black py-5 px-3">
+      <div className="row container py-5 my-5">
+          <div className="col-sm-4 col-md-6">
+            <div className="mb-3">
+              <div className="">
+                <input type="text" className="form-control" id="name" />
+                <label htmlFor="name">Nombre y apellidos</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="">
+                <input type="email" className="form-control" id="email" />
+                <label htmlFor="email">Email</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="">
+                <input type="text" className="form-control" id="company" />
+                <label htmlFor="company">Empresa/Organismo</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="">
+                <input type="text" className="form-control" id="country" />
+                <label htmlFor="country">País</label>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-3 col-md-6">
+            <div className="mb-3">
+              <div className="">
+                <input type="tel" className="form-control" id="phone" />
+                <label htmlFor="phone">Teléfono</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="">
+                <textarea className="form-control" id="message" rows={5}></textarea>
+                <label htmlFor="message">Mensaje:</label>
+              </div>
+            </div>
+            <div className="d-flex justify-content-center position-relative">
+              <button type="button" className="btn btn-outline-light border-2 btn_send">Enviar</button>
+            </div>
+          </div>
+        </div>
     </div>
   );
 };
